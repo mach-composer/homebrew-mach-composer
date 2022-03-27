@@ -10,7 +10,7 @@ class MachComposer < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/labd/mach-composer-go/releases/download/v0.0.5/mach-composer_v0.0.5_darwin_amd64.tar.gz"
+      url "https://github.com/labd/mach-composer-go/releases/download/v0.0.5/mach-composer_0.0.5_darwin_amd64.tar.gz"
       sha256 "2f7c5eee9c1d97647d5bd9aa170e67d3cf54c01a78c250fd9ec9eec07812fad1"
 
       def install
@@ -37,7 +37,7 @@ class MachComposer < Formula
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/labd/mach-composer-go/releases/download/v0.0.5/mach-composer_v0.0.5_linux_armv6.tar.gz"
+      url "https://github.com/labd/mach-composer-go/releases/download/v0.0.5/mach-composer_0.0.5_linux_armv6.tar.gz"
       sha256 "edde082ef7cd6da98475359a768f33994f3fd77d4ff16935f365f65554997bec"
 
       def install
@@ -45,7 +45,7 @@ class MachComposer < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/labd/mach-composer-go/releases/download/v0.0.5/mach-composer_v0.0.5_linux_arm64.tar.gz"
+      url "https://github.com/labd/mach-composer-go/releases/download/v0.0.5/mach-composer_0.0.5_linux_arm64.tar.gz"
       sha256 "4bb2134164707c1495f072a0ef633b787d9ad5138f7511cbef4db5d859f24850"
 
       def install
