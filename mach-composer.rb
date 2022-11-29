@@ -14,7 +14,7 @@ class MachComposer < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/labd/mach-composer/releases/download/v2.4.0/mach-composer-2.4.0-darwin-amd64.tar.gz"
-      sha256 "40600b1af2ede035a726b204b0e1966793759b9c62e49a9019bd59112b01e2c6"
+      sha256 "1a93a76b89152f80627afa341059c932b734e7c085e639dac103d510157b6d21"
 
       def install
         bin.install "bin/mach-composer"
@@ -22,7 +22,7 @@ class MachComposer < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/labd/mach-composer/releases/download/v2.4.0/mach-composer-2.4.0-darwin-arm64.tar.gz"
-      sha256 "652b2b8747cd90f753de1b95df5e44ce33180a7b32b773292e9010ddbcedfc8e"
+      sha256 "1579c03f6514b18c2013b8980e5a7ba1d2e203a4d73fccef75ce1d367d79e4c4"
 
       def install
         bin.install "bin/mach-composer"
@@ -33,7 +33,7 @@ class MachComposer < Formula
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/labd/mach-composer/releases/download/v2.4.0/mach-composer-2.4.0-linux-amd64.tar.gz"
-      sha256 "93841f5a0b4fb19f5d4bb6dca50d7d6f7f6ccbb9fa56c2226e922ed1dfadffe3"
+      sha256 "97b2bdb6eb4cb999722db592beeb89e5c89dcf8131f60840080cc7d4f7ce3524"
 
       def install
         bin.install "bin/mach-composer"
@@ -41,7 +41,7 @@ class MachComposer < Formula
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
       url "https://github.com/labd/mach-composer/releases/download/v2.4.0/mach-composer-2.4.0-linux-armv6.tar.gz"
-      sha256 "e25035c2cd70e25188cc260803e571371c78f2fbd7957d7a4341df04b3a3ae62"
+      sha256 "7d6abcd6d029249a59731822a6c9d72a5f6913b8f857b5b619fe9de74a202e8f"
 
       def install
         bin.install "bin/mach-composer"
@@ -49,7 +49,7 @@ class MachComposer < Formula
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/labd/mach-composer/releases/download/v2.4.0/mach-composer-2.4.0-linux-arm64.tar.gz"
-      sha256 "ca9af2f2a4c8647f3f44b834c5b8d194e54888d46601d807c49bac0fa3c041ba"
+      sha256 "b55f2ba57aad5c67764edb36c6747b9a44dad43a83fd390a726e0d8d4304cae6"
 
       def install
         bin.install "bin/mach-composer"
