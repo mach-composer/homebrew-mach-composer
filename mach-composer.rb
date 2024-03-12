@@ -8,7 +8,7 @@ modern digital commerce & experience platforms, based on MACH
 technologies and cloud native services..
 "
   homepage "https://machcomposer.io/"
-  version "2.16.3"
+  version "2.16.4"
   license "MIT"
 
   depends_on "git" => :optional
@@ -16,16 +16,16 @@ technologies and cloud native services..
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/mach-composer/mach-composer-cli/releases/download/v2.16.3/mach-composer-2.16.3-darwin-arm64.tar.gz"
-      sha256 "6a4fb4be7e879684cd137626bb6775b96e37c59e951ea777a887bb0792edcd42"
+      url "https://github.com/mach-composer/mach-composer-cli/releases/download/v2.16.4/mach-composer-2.16.4-darwin-arm64.tar.gz"
+      sha256 "82f8845872bf1b50dee85ab64d956426c0316b5d485bd4f2bb0512bfc937a1fb"
 
       def install
         bin.install "bin/mach-composer"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/mach-composer/mach-composer-cli/releases/download/v2.16.3/mach-composer-2.16.3-darwin-amd64.tar.gz"
-      sha256 "2084d2caadeb21ed77a5e69c3d3a15eec9be668ac4ac6278380cc7c87cfbef82"
+      url "https://github.com/mach-composer/mach-composer-cli/releases/download/v2.16.4/mach-composer-2.16.4-darwin-amd64.tar.gz"
+      sha256 "178b91692ff8310d11a68f787f19ccee5cb22a0ddaa22c145001c0140d337769"
 
       def install
         bin.install "bin/mach-composer"
@@ -34,25 +34,25 @@ technologies and cloud native services..
   end
 
   on_linux do
-    if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/mach-composer/mach-composer-cli/releases/download/v2.16.3/mach-composer-2.16.3-linux-armv6.tar.gz"
-      sha256 "9dc6c2cfc47882eb573acd04384c703b28aa79aee656d114dcf481c7dd047af9"
-
-      def install
-        bin.install "bin/mach-composer"
-      end
-    end
     if Hardware::CPU.intel?
-      url "https://github.com/mach-composer/mach-composer-cli/releases/download/v2.16.3/mach-composer-2.16.3-linux-amd64.tar.gz"
-      sha256 "8153d04d10949e9219550009ebf0d4d7315df5a1792caf851bfe600b35a0c47f"
+      url "https://github.com/mach-composer/mach-composer-cli/releases/download/v2.16.4/mach-composer-2.16.4-linux-amd64.tar.gz"
+      sha256 "84b1ffbc89357b523b41ed92e5f20aaa72b14e9a3c5e0c3ee3e67bba25eb9263"
 
       def install
         bin.install "bin/mach-composer"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mach-composer/mach-composer-cli/releases/download/v2.16.3/mach-composer-2.16.3-linux-arm64.tar.gz"
-      sha256 "0098f126e64a12bd91a9572551befa79b41cae9f335c5393aaa3a7f876380b19"
+      url "https://github.com/mach-composer/mach-composer-cli/releases/download/v2.16.4/mach-composer-2.16.4-linux-arm64.tar.gz"
+      sha256 "1980f0e845434f9d728eb015e16f50cd0181c07b71f65f62586cf230e7cf2a9d"
+
+      def install
+        bin.install "bin/mach-composer"
+      end
+    end
+    if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
+      url "https://github.com/mach-composer/mach-composer-cli/releases/download/v2.16.4/mach-composer-2.16.4-linux-armv6.tar.gz"
+      sha256 "a5a32354e05c152a82672b939dc04bafb2016a207172959b65299fd145012f5e"
 
       def install
         bin.install "bin/mach-composer"
