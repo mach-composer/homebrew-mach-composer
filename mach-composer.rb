@@ -17,7 +17,7 @@ technologies and cloud native services..
   on_macos do
     on_intel do
       url "https://github.com/mach-composer/mach-composer-cli/releases/download/v2.19.0/mach-composer-2.19.0-darwin-amd64.tar.gz"
-      sha256 "9dc3482d4c1fdb4c46293fbf61454bb61e86035424ef7c780a8bf24a4ca546c6"
+      sha256 "744fe6de5fd3807b1654d802875a180a19d72be39ca65f145b24169cab1a2375"
 
       def install
         bin.install "bin/mach-composer"
@@ -25,7 +25,7 @@ technologies and cloud native services..
     end
     on_arm do
       url "https://github.com/mach-composer/mach-composer-cli/releases/download/v2.19.0/mach-composer-2.19.0-darwin-arm64.tar.gz"
-      sha256 "85358b196e30c1b5bc97c2819562c81c62baf228db007f135135aed9dc0c7b4c"
+      sha256 "63411363b3609897de479a38d85dd2cf7f32d54778fa1c287c875846bac6fa04"
 
       def install
         bin.install "bin/mach-composer"
@@ -37,7 +37,7 @@ technologies and cloud native services..
     on_intel do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/mach-composer/mach-composer-cli/releases/download/v2.19.0/mach-composer-2.19.0-linux-amd64.tar.gz"
-        sha256 "f60cdb392b0e8be83d12fbc51250e25668ec943c41b2bef0659d34b4d1ae5ec8"
+        sha256 "5f232f07c3c2c639ee7b8a0e4f37a4913fb888472692b5b9b9c6b91f5f79c904"
 
         def install
           bin.install "bin/mach-composer"
@@ -47,7 +47,7 @@ technologies and cloud native services..
     on_arm do
       if !Hardware::CPU.is_64_bit?
         url "https://github.com/mach-composer/mach-composer-cli/releases/download/v2.19.0/mach-composer-2.19.0-linux-armv6.tar.gz"
-        sha256 "dfaff5a00ed716eaac30326814c8073ebe5c57b9d56e8feb82967f3c1883809a"
+        sha256 "af3a30e80e587d3085954e5c6d5a404494e1abc3afe5edfe36a9310996a25f95"
 
         def install
           bin.install "bin/mach-composer"
@@ -57,7 +57,7 @@ technologies and cloud native services..
     on_arm do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/mach-composer/mach-composer-cli/releases/download/v2.19.0/mach-composer-2.19.0-linux-arm64.tar.gz"
-        sha256 "3ac9be22c6bf2a6ef6f03b13c73e621f852bbdaa2ec86680a3d27c84f664f42c"
+        sha256 "16639f40c8056bcf106df90a264e61d42ea5309bd12b14e0ff9979cd361a3b2f"
 
         def install
           bin.install "bin/mach-composer"
