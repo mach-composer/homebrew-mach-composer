@@ -12,7 +12,6 @@ technologies and cloud native services..
   license "MIT"
 
   depends_on "git" => :optional
-  depends_on "terraform"
 
   on_macos do
     if Hardware::CPU.intel?
@@ -55,5 +54,14 @@ technologies and cloud native services..
         bin.install "bin/mach-composer"
       end
     end
+  end
+
+  def caveats
+    <<~EOS
+      mach-composer requires terraform (or OpenTofu) to be installed, e.g.:
+        brew install hashicorp/tap/terraform
+      or
+        brew install opentofu
+    EOS
   end
 end
